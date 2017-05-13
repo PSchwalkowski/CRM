@@ -2,9 +2,14 @@
 // window._ = require('lodash');
 
 try {
-	require('foundation-sites');
-} catch (e) {
+	window.jQuery = require('jquery');
+	window.$ = window.jQuery;
 
+	require('../../../node_modules/foundation-sites/dist/js/foundation.min.js');
+
+	$(document).foundation();
+} catch (e) {
+	console.warn(e);
 }
 
 /**

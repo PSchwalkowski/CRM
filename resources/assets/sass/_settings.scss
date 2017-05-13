@@ -55,11 +55,11 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
-	
-	primary-color: #28AD81,
-	secondary-color: #3F26A5,
-	gradient-red: #AA292C,
-	gradient-pink: #AF27AD,
+
+	brand-primary: #28AD81,
+	brand-secondary: #3F26A5,
+	brand-gradient-red: #AA292C,
+	brand-gradient-pink: #AF27AD,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -74,7 +74,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 4px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -617,7 +617,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0.5rem 1.5rem;
 $topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
