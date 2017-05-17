@@ -32,14 +32,8 @@
 			<div class="top-bar-right">
 				@if (Auth::user())
 				<ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
-					<!-- <li>
-						<a href="#">Projects <i class="fi-monitor"></i></a>
-					</li>
 					<li>
-						<a href="#">Administration <i class="fi-shield"></i></a>
-					</li> -->
-					<li>
-						<a href="#">User avatar</a>
+						<a href="#" id="user-avatar"></a>
 						<ul class="menu">
 							<li>
 								<a href="#">Profile</a>
@@ -62,12 +56,15 @@
 		</div>
 
 		<div id="main-wrapper">
+			@if (Auth::user())
 			<aside id="toolbar">
 				@yield('toolbar')
 			</aside>
+			@endif
 			<main id="main-content">
 				@yield('content')
 			</main>
+			@if (Auth::user())
 			<nav id="navbar">
 				<time>{{ date('d.m Y') }}</time>
 				<hr>
@@ -83,6 +80,7 @@
 					</li>
 				</ul>
 			</nav>
+			@endif
 		</div>
 	</div>
 

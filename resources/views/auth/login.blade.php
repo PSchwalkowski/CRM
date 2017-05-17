@@ -1,6 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
+	<div class="row">
+		<div class="column small-centered small-4">
+			<form method="POST" action="{{ route('login') }}">
+				{{ csrf_field() }}
+				<div class="row">
+					<div class="column">
+						<label for="email">Email
+							<input type="text" name="email" id="email" value="{{ old('email') }}">
+						</label>
+					</div>
+					<div class="column">
+						<label for="password">Password
+							<input type="password" name="password" id="password">
+						</label>
+					</div>
+					<div class="column">
+						<label>
+							<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+						</label>
+					</div>
+					<hr>
+					<div class="column">
+						<button type="submit" class="button">Login</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+@endsection
+
+@section('content2')
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">

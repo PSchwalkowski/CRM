@@ -5,7 +5,7 @@ try {
 	window.jQuery = require('jquery');
 	window.$ = window.jQuery;
 
-	require('../../../node_modules/foundation-sites/dist/js/foundation.min.js');
+	require('foundation-sites');
 
 	$(document).foundation();
 } catch (e) {

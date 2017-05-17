@@ -19,5 +19,6 @@ Route::group(['namespace' => 'Auth'], function() {
 });
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/profile', 'HomeController@index')->name('profile');
 Route::get('/projects', 'HomeController@index')->name('projects');
 Route::get('/clients', 'HomeController@index')->name('clients');
