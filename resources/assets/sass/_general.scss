@@ -3,6 +3,52 @@ body {
   -webkit-appearance: none;
 }
 
+#app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#main-wrapper {
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	@include clearfix;
+}
+
+#toolbar {
+	width: $toolbar-width;
+	flex-grow: 1;
+	padding: $global-padding;
+	background-color: $toolbar-background-color;
+}
+
+#main-content {
+	width: calc(100% - #{$toolbar-width});
+	flex-grow: 1;
+	padding: $global-padding;
+	background-color: $light-gray;
+}
+
+#navbar {
+	position: fixed;
+	// right: 0;
+	right: -$toolbar-width;
+	width: $toolbar-width;
+	height: 100%;
+	padding: $global-padding;
+	background-color: $navbar-background-color;
+
+	.navbar-open &, & {
+		transition: right .25s ease-in-out;
+	}
+
+	.navbar-open & {
+		right: 0;
+	}
+}
+
+
 .page-title {
 	font-size: 1.5rem;
 	background-image: linear-gradient(45deg, get-color('brand-gradient-red'), get-color('brand-gradient-pink'));

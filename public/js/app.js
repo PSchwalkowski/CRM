@@ -742,15 +742,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-/**
-* First we will load all of this project's JavaScript dependencies which
-* includes Vue and other libraries. It is a great starting point when
-* building robust, powerful web applications using Vue and Laravel.
-*/
-
 __webpack_require__(27);
-
-// var c =
 
 window.Vue = __webpack_require__(31);
 
@@ -764,8 +756,22 @@ window.Vue = __webpack_require__(31);
 
 var app = new Vue({
 	el: '#app',
+	data: {
+		documentBody: $('body')
+	},
 	mounted: function mounted() {
-		new Foundation.DropdownMenu($('[data-dropdown-menu]'));
+		this.initFoundation();
+
+		this.documentBody.addClass('navbar-open');
+	},
+	methods: {
+		initFoundation: function initFoundation() {
+			new Foundation.DropdownMenu($('[data-dropdown-menu]'));
+			new Foundation.Drilldown($('[data-drilldown]'));
+		},
+		toggleNavbar: function toggleNavbar() {
+			this.documentBody.toggleClass('navbar-open');
+		}
 	}
 });
 

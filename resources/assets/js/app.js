@@ -1,13 +1,5 @@
 
-/**
-* First we will load all of this project's JavaScript dependencies which
-* includes Vue and other libraries. It is a great starting point when
-* building robust, powerful web applications using Vue and Laravel.
-*/
-
 require('./bootstrap');
-
-// var c =
 
 window.Vue = require('vue');
 
@@ -21,7 +13,21 @@ window.Vue = require('vue');
 
 const app = new Vue({
 	el: '#app',
+	data: {
+		documentBody: $('body')
+	},
 	mounted: function() {
-		new Foundation.DropdownMenu($('[data-dropdown-menu]'));
+		this.initFoundation();
+
+		this.documentBody.addClass('navbar-open');
+	},
+	methods: {
+		initFoundation: () => {
+			new Foundation.DropdownMenu($('[data-dropdown-menu]'));
+			new Foundation.Drilldown($('[data-drilldown]'));
+		},
+		toggleNavbar: function() {
+			this.documentBody.toggleClass('navbar-open');
+		}
 	}
 });

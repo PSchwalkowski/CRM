@@ -50,18 +50,18 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #aa292c,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 
-	brand-primary: #28AD81,
-	brand-secondary: #3F26A5,
-	brand-gradient-red: #AA292C,
-	brand-gradient-pink: #AF27AD,
+	brand-primary: #28ad81,
+	brand-secondary: #3f26a5,
+	brand-gradient-red: #aa292c,
+	brand-gradient-pink: #af27ad,
 );
-$light-gray: #e6e6e6;
+$light-gray: #efefef;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -78,6 +78,11 @@ $global-radius: 4px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
+
+$toolbar-width: 225px;
+$toolbar-background-color: $white;
+$navbar-width: $toolbar-width;
+$navbar-background-color: $toolbar-background-color;
 
 @include add-foundation-colors;
 
