@@ -1,7 +1,9 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+import Vue from 'vue';
+
+window.Vue = Vue;
 
 /**
 * Next, we will create a fresh Vue application instance and attach it to
@@ -38,13 +40,23 @@ const app = new Vue({
 		},
 
 		initPlaceholderData: function() {
-			axios.get('https://randomuser.me/api/')
-				.then(response => {
-					if (response.status != 200)
-						return;
+			let avatar = localStorage.getItem('avatar');
+			let userAvatar = $('#user-avatar');
+			if (avatar) {
+				userAvatar.append($('<img />').attr('src', avatar));
+			} else {
+				axios.get('https://randomuser.me/api/')
+					.then(response => {
+						if (response.status != 200)
+							return;
 
-					$('#user-avatar').append($('<img />').attr('src', response.data.results[0].picture.thumbnail));
-				});
+						let newAvatar = response.data.results[0].picture.thumbnail;
+						localStorage.setItem('avatar', newAvatar);
+
+						userAvatar.append($('<img />').attr('src', newAvatar));
+					});
+			}
+
 
 		}
 	}
