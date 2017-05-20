@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 34);
+/******/ 	return __webpack_require__(__webpack_require__.s = 33);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -743,20 +743,13 @@ module.exports = function bind(fn, thisArg) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 __webpack_require__(27);
 
 
-
 window.Vue = __WEBPACK_IMPORTED_MODULE_0_vue___default.a;
-
-/**
-* Next, we will create a fresh Vue application instance and attach it to
-* the page. Then, you may begin adding components to this application
-* or customize the JavaScript scaffolding to fit your unique needs.
-*/
 
 // Vue.component('example', require('./components/Example.vue'));
 
@@ -767,7 +760,6 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	},
 	mounted: function mounted() {
 		this.initFoundation();
-
 		this.initPlaceholderData();
 	},
 	methods: {
@@ -786,6 +778,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 		initPlaceholderData: function initPlaceholderData() {
 			var avatar = localStorage.getItem('avatar');
 			var userAvatar = $('#user-avatar');
+
 			if (avatar) {
 				userAvatar.append($('<img />').attr('src', avatar));
 			} else {
@@ -22356,8 +22349,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 31 */,
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32052,10 +32044,10 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(32)))
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports) {
 
 var g;
@@ -32082,7 +32074,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(7);
