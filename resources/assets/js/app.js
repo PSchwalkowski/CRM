@@ -5,11 +5,12 @@ import Vue from 'vue';
 window.Vue = Vue;
 
 
-// Vue.component('example', require('./components/Example.vue'));
+Vue.component('auth-login', require('./components/Auth/Login.vue'));
 
 const app = new Vue({
 	el: '#app',
 	data: {
+		apiPrefix: 'api/v1/',
 		documentBody: $('body')
 	},
 	mounted: function() {
