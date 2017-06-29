@@ -11,14 +11,6 @@
 |
 */
 
-// @see vendor\laravel\framework\src\Illuminate\Routing\Router.php
-Route::group(['namespace' => 'Auth'], function() {
-	Route::get('login', 'LoginController@showLoginForm')->name('login');
-	Route::post('login', 'LoginController@login');
-	Route::post('logout', 'LoginController@logout')->name('logout');
+Route::get('/', function () {
+    return view('welcome');
 });
-
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/profile', 'HomeController@index')->name('profile');
-Route::get('/projects', 'HomeController@index')->name('projects');
-Route::get('/clients', 'HomeController@index')->name('clients');

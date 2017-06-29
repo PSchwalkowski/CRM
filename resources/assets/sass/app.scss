@@ -2,11 +2,8 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-// Foundation
-@import "foundation";
-@include foundation-everything;
+// Variables
+@import "variables";
 
-@import 'foundation-icons';
-
-// General
-@import 'general';
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
