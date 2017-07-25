@@ -20,8 +20,7 @@ Route::group(['namespace' => 'Auth'], function() {
 	Route::post('logout', 'LoginController@logout')->name('logout');
 });
 
-Route::get('/', function () {
-	return view('welcome');
-});
-
-Route::get('/home', 'HomeController@index')->name('home');
+/**
+ * Dashboard
+ */
+Route::get('/', 'HomeController@index')->name('home');
