@@ -1,0 +1,25 @@
+
+.header {
+	padding: 10px;
+	background-color: $branding-primary;
+	background-image: url('../../storage/header-temp-bg.jpeg');
+	background-position-y: -400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	animation-name: header-image-filter;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes header-image-filter {
+	0% {
+		filter: hue-rotate(0deg) contrast(100%);
+	}
+	50% {
+		filter: hue-rotate(360deg) contrast(125%);
+	}
+	100% {
+		filter: hue-rotate(0deg) contrast(100%);
+	}
+}
