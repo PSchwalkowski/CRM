@@ -16,4 +16,15 @@ a {
 	&:hover {
 		border-bottom-color: $branding-secondary;
 	}
+
+	&.icon-link {
+
+		i {
+			transition: margin-right ease $transition-delay;
+		}
+
+		&:hover i {
+			margin-right: .5em;
+		}
+	}
 }

@@ -11,12 +11,12 @@
     "migrate": "php artisan migrate:refresh --seed"
   },
   "devDependencies": {
+    "axios": "^0.16.2",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "cross-env": "^5.0.2",
     "jquery": "^3.1.1",
-    "laravel-mix": "^1.4.2"
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.13",
-    "browser-sync-webpack-plugin": "^1.2.0"
+    "laravel-mix": "^1.4.2",
+    "vue": "^2.4.2"
   }
 }
