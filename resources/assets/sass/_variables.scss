@@ -8,7 +8,7 @@
 /* 1. Colors */
 $body-bg: #2D2D2F;
 
-$text-color-default: white;
+$text-color-default: darken(white, 10);
 
 $branding-primary: #5052A5;
 $branding-secondary: #dc5551;
@@ -16,6 +16,10 @@ $branding-secondary: #dc5551;
 $black: #000;
 
 $navbar-bg: lighten($body-bg, 10);
+
+$form-group-bg: #222223;
+$form-group-border-color: #464649;
+$form-field-color: #666;
 
 /* 2. Dimensions */
 $header-height: 300px;

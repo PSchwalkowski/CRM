@@ -1,0 +1,42 @@
+
+.auth {
+
+	&-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+	}
+
+	&-form-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	&-form {
+		padding: 10px 0;
+
+		legend {
+			margin: 10px;
+		}
+
+		[type="submit"] {
+			margin-top: 20px;
+			padding: .5em 2em .5em 2.5em;
+			background: none;
+			border: 1px solid $branding-secondary;
+			border-top-right-radius: 1.25em;
+			border-bottom-right-radius: 1.25em;
+			border-left: none;
+			color: $branding-secondary;
+			font-size: .85em;
+			outline: none;
+		}
+
+		&-info {
+			padding: 10px;
+			background-color: $branding-secondary;
+			text-align: right;
+		}
+	}
+}

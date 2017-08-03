@@ -1,0 +1,46 @@
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.field {
+	display: block;
+	padding: 4px 6px;
+	font-size: .9rem;
+	color: $form-field-color;
+	background: none;
+	border: none;
+	box-shadow: none;
+	outline: none;
+
+	&:-webkit-autofill {
+		-webkit-text-fill-color: $form-field-color !important;
+		 -webkit-box-shadow: 0 0 0 30px $form-group-bg inset;
+	}
+
+	+ .field {
+		border-top: none;
+	}
+
+	&-group {
+		display: grid;
+		grid-template-columns: 48px auto;
+		width: 100%;
+		background-color: $form-group-bg;
+		border-top: 1px solid $form-group-border-color;
+		border-bottom: 1px solid $form-group-border-color;
+
+		+ .field-group {
+			border-top: none;
+		}
+
+		.icon {
+			padding: 4px;
+			color: $branding-secondary;
+			font-size: 1.25em;
+			text-align: right;
+		}
+	}
+}

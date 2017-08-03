@@ -4174,7 +4174,7 @@ th {
 
 /* 3. Other */
 
-.container {
+.main-container {
   display: grid;
   grid-template-columns: 300px auto;
   grid-template-rows: 300px auto;
@@ -4214,6 +4214,53 @@ h3 {
   font-size: 1.25rem;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.field {
+  display: block;
+  padding: 4px 6px;
+  font-size: .9rem;
+  color: #666;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.field:-webkit-autofill {
+  -webkit-text-fill-color: #666 !important;
+  -webkit-box-shadow: 0 0 0 30px #222223 inset;
+}
+
+.field + .field {
+  border-top: none;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: 48px auto;
+  width: 100%;
+  background-color: #222223;
+  border-top: 1px solid #464649;
+  border-bottom: 1px solid #464649;
+}
+
+.field-group + .field-group {
+  border-top: none;
+}
+
+.field-group .icon {
+  padding: 4px;
+  color: #dc5551;
+  font-size: 1.25em;
+  text-align: right;
+}
+
 .hide {
   display: none;
 }
@@ -4226,9 +4273,21 @@ h3 {
   float: left;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 body {
   background-color: #2D2D2F;
-  color: white;
+  color: #e6e5e5;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
 }
@@ -4253,6 +4312,56 @@ a.icon-link i {
 
 a.icon-link:hover i {
   margin-right: .5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.auth-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.auth-form {
+  padding: 10px 0;
+}
+
+.auth-form legend {
+  margin: 10px;
+}
+
+.auth-form [type="submit"] {
+  margin-top: 20px;
+  padding: .5em 2em .5em 2.5em;
+  background: none;
+  border: 1px solid #dc5551;
+  border-top-right-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+  border-left: none;
+  color: #dc5551;
+  font-size: .85em;
+  outline: none;
+}
+
+.auth-form-info {
+  padding: 10px;
+  background-color: #dc5551;
+  text-align: right;
 }
 
 .header {

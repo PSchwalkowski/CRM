@@ -14,18 +14,8 @@
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-	<div id="app" class="main-container">
-		<header class="header"></header>
-		<main class="main">Main</main>
-		<aside class="aside">Aside</aside>
-		<nav class="navbar">
-			<div class="profile-wrapper">
-				@include('layouts.partials.profile')
-			</div>
-			<div class="navigation-wrapper">
-				@include('layouts.partials.navigation')
-			</div>
-		</nav>
+	<div id="app" class="auth-container">
+		@yield('content')
 	</div>
 
 	<!-- Scripts -->

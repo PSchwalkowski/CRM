@@ -1,6 +1,36 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
+	<div class="auth-form-wrapper">
+		<div class="auth-form-info">
+			<h3>Welcome</h3>
+			<p>This application is still in prototype version.</p>
+			<p>Have fun!</p>
+		</div>
+		<form method="POST" action="{{ route('login') }}" class="auth-form">
+			{{ csrf_field() }}
+
+			<fieldset>
+				<legend>Login to your account</legend>
+				<div class="field-group">
+					<i class="icon ion-ios-at"></i>
+					<input type="text" name="email" id="email" placeholder="john@doe.com" 
+						value="{{ old('email') }}" class="field">
+				</div>
+				<div class="field-group">
+					<i class="icon ion-key"></i>
+					<input type="password" name="password" id="password" 
+						placeholder="secret" class="field">
+				</div>
+
+				<button type="submit">Login</button>
+			</fieldset>
+		</form>
+	</div>
+	
+@endsection
+
+@section('content2')
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
