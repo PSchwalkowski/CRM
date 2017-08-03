@@ -5,3 +5,15 @@ body {
 	font-size: 16px;
 	font-family: "Raleway", sans-serif;
 }
+
+a {
+	line-height: 1;
+	color: $branding-secondary;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom-color ease $transition-delay;
+	
+	&:hover {
+		border-bottom-color: $branding-secondary;
+	}
+}

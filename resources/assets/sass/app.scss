@@ -3,6 +3,7 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import 'ionicons/ionicons';
 
 // Variables
 @import 'variables';
@@ -12,5 +13,6 @@
 
 @import 'general',
 				'header',
+				'navbar',
 				'aside',
 				'main';
