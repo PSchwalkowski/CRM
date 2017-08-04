@@ -8,7 +8,7 @@ fieldset {
 .field {
 	display: block;
 	padding: 4px 6px;
-	font-size: .9rem;
+	width: 100%;
 	color: $form-field-color;
 	background: none;
 	border: none;
@@ -25,8 +25,8 @@ fieldset {
 	}
 
 	&-group {
-		display: grid;
-		grid-template-columns: 48px auto;
+		display: inline-table;
+		vertical-align: middle;
 		width: 100%;
 		background-color: $form-group-bg;
 		border-top: 1px solid $form-group-border-color;
@@ -37,10 +37,15 @@ fieldset {
 		}
 
 		.icon {
-			padding: 4px;
+			width: auto;
+			min-width: 24px;
 			color: $branding-secondary;
 			font-size: 1.25em;
-			text-align: right;
+			text-align: center;
+
+			&, .field {
+				display: table-cell;
+			}
 		}
 	}
 }

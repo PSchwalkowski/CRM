@@ -3,6 +3,7 @@
  * 1. Colors
  * 2. Dimensions
  * 3. Other
+ * 4. Alerts
  */
 
 /* 1. Colors */
@@ -25,6 +26,11 @@ $form-field-color: #666;
 $header-height: 300px;
 $navbar-profile-height: $header-height;
 
-/* 3. Other */
+/* 3. Transitions */
 $transition-effect: ease;
 $transition-delay: .3s;
+
+/* 4. Alerts */
+$alert-danger: red;
+$alert-warning: yellow;
+$alert-info: cyan;

@@ -12,6 +12,10 @@
 
 			<fieldset>
 				<legend>Login to your account</legend>
+
+				@component('components.alert', ['errors' => $errors])
+				@endcomponent
+
 				<div class="field-group">
 					<i class="icon ion-ios-at"></i>
 					<input type="text" name="email" id="email" placeholder="john@doe.com" 

@@ -5,8 +5,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import 'ionicons/ionicons';
 
-// Variables
-@import 'variables';
+
+@import 'variables',
+				'mixins';
 
 @import 'grid',
 				'typography',
@@ -14,8 +15,11 @@
 				'utility';
 
 @import 'general',
-				'auth',
-				'header',
-				'navbar',
-				'aside',
-				'main';
+				'auth';
+
+@import 'layout/header',
+				'layout/navbar',
+				'layout/aside',
+				'layout/main';
+
+@import 'components/alerts';

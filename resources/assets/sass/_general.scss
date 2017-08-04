@@ -2,8 +2,18 @@
 body {
 	background-color: $body-bg;
 	color: $text-color-default;
-	font-size: 16px;
 	font-family: "Raleway", sans-serif;
+
+	html, & {
+		box-sizing: border-box;
+		-webkit-font-smoothing: subpixel-antialiased;
+		-webkit-appearance: none;
+		font-size: 16px;
+	}
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {

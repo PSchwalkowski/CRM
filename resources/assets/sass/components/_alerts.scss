@@ -1,0 +1,23 @@
+
+.alert {
+	margin: 10px;
+	padding: 10px;
+	font-size: .85em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	&-danger {
+		border: 1px solid $alert-danger;
+	}
+
+	&-warning {
+		border: 1px solid $alert-warning;
+	}
+
+	&-info {
+		border: 1px solid $alert-info;
+	}
+}
