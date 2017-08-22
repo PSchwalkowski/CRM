@@ -20,8 +20,12 @@
 				<i class="icon ion-navicon"></i>
 			</button>
 		</header>
-		<main class="main">Main</main>
-		<aside class="aside">Aside</aside>
+		<main class="main">
+			@yield('main')
+		</main>
+		<aside class="aside">
+			@yield('aside')
+		</aside>
 		<nav class="navbar">
 			<div class="profile-wrapper">
 				@include('layouts.partials.profile')

@@ -24,3 +24,10 @@ Route::group(['namespace' => 'Auth'], function() {
  * Dashboard
  */
 Route::get('/', 'HomeController@index')->name('home');
+
+/**
+ * Users
+ */
+Route::group(['prefix' => 'users', 'middleware' => 'auth'], function() {
+	Route::get('', 'UserController@index')->name('users.index');
+});
