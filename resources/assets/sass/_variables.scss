@@ -10,12 +10,13 @@
 /* 1. Colors */
 $body-bg: #2D2D2F;
 
-$text-color-default: darken(white, 10);
+$white: darken(white, 10);
+$black: #000;
+
+$text-color-default: $white;
 
 $branding-primary: #5052A5;
 $branding-secondary: #dc5551;
-
-$black: #000;
 
 $navbar-bg: lighten($body-bg, 10);
 $navbar-toggle-color: $body-bg;

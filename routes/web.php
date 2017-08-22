@@ -30,4 +30,5 @@ Route::get('/', 'HomeController@index')->name('home');
  */
 Route::group(['prefix' => 'users', 'middleware' => 'auth'], function() {
 	Route::get('', 'UserController@index')->name('users.index');
+	Route::get('{user}', 'UserController@index')->name('users.edit');
 });

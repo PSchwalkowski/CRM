@@ -4298,6 +4298,37 @@ fieldset {
   text-align: right;
 }
 
+.table {
+  width: 100%;
+}
+
+.table th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: .5em;
+}
+
+.table thead {
+  border-bottom: 1px solid #e6e5e5;
+}
+
+.table tbody > tr {
+  -webkit-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
+}
+
+.table tbody > tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.table tbody > tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 body {
   background-color: #2D2D2F;
   color: #e6e5e5;

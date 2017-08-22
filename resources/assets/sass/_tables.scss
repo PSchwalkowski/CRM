@@ -1,4 +1,29 @@
 
 .table {
+	width: 100%;
 	
+	th {
+		font-weight: normal;
+		text-align: left;
+	}
+
+	th, td {
+		padding: .5em;
+	}
+
+	thead {
+		border-bottom: 1px solid $white;
+	}
+
+	tbody > tr {
+		transition: background-color $transition-effect $transition-delay;
+
+		&:nth-child(even) {
+			background-color: rgba($black, .15);
+		}
+
+		&:hover {
+			background-color: rgba($black, .2);
+		}
+	}
 }
