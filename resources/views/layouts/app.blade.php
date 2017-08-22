@@ -15,7 +15,11 @@
 </head>
 <body>
 	<div id="app" class="main-container">
-		<header class="header"></header>
+		<header class="header">
+			<button class="navbar-toggle" id="navbar-toggle" v-on:click="navbarToggle">
+				<i class="icon ion-navicon"></i>
+			</button>
+		</header>
 		<main class="main">Main</main>
 		<aside class="aside">Aside</aside>
 		<nav class="navbar">

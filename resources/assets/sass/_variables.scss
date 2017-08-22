@@ -6,6 +6,7 @@
  * 4. Alerts
  */
 
+ 
 /* 1. Colors */
 $body-bg: #2D2D2F;
 
@@ -17,18 +18,22 @@ $branding-secondary: #dc5551;
 $black: #000;
 
 $navbar-bg: lighten($body-bg, 10);
+$navbar-toggle-color: $body-bg;
 
 $form-group-bg: #222223;
 $form-group-border-color: #464649;
 $form-field-color: #666;
 
+
 /* 2. Dimensions */
 $header-height: 300px;
 $navbar-profile-height: $header-height;
 
+
 /* 3. Transitions */
 $transition-effect: ease;
 $transition-delay: .3s;
+
 
 /* 4. Alerts */
 $alert-danger: red;

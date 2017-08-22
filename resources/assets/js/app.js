@@ -18,5 +18,10 @@ window.Vue = require('vue');
 // Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-	el: '#app'
+	el: '#app',
+	methods: {
+		navbarToggle: function() {
+			document.body.classList.toggle('navbar-open');
+		}
+	}
 });

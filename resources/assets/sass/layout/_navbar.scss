@@ -6,14 +6,20 @@
 		"profile"
 		"navigation";
 
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	top: 0;
 	right: 0;
+	right: -($navbar-profile-height + 10px);
 	width: $navbar-profile-height;
 	height: 100vh;
 	background-color: $navbar-bg;
 	box-shadow: 0px 0px 5px #000;
+	transition: right $transition-effect $transition-delay;
+
+	.navbar-open & {
+		right: 0;
+	}
 }
 
 .profile {
@@ -70,5 +76,27 @@
 				background-color: rgba($black, .2);
 			}
 		}
+	}
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 0 7px;
+	right: 0;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: $navbar-toggle-color;
+	font-size: 2.5rem;
+	outline: none;
+	transition: color $transition-effect $transition-delay, right $transition-effect $transition-delay;
+
+	&:hover {
+		color: $branding-secondary;
+	}
+
+	.navbar-open & {
+		right: $navbar-profile-height + 10px;
 	}
 }
