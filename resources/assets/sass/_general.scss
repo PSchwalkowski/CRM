@@ -16,30 +16,3 @@ body {
   box-sizing: inherit;
 }
 
-a {
-	line-height: 1;
-	color: $branding-secondary;
-	text-decoration: none;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom-color ease $transition-delay;
-	
-	&:hover {
-		border-bottom-color: $branding-secondary;
-	}
-
-	&.icon-link {
-
-		i {
-			transition: margin-right ease $transition-delay;
-		}
-
-		&:hover i {
-			margin-right: .5em;
-		}
-	}
-}
-
-p {
-	margin-top: 0;
-	margin-bottom: 10px;
-}

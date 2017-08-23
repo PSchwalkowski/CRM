@@ -30,3 +30,12 @@
 		</tbody>
 	</table>
 @endsection
+
+@section('aside')
+	<p>Total users: {{ $users->count() }}</p>
+	<!-- Chart with roles assigment or something like this -->
+	
+	<div class="aside-user-preview">
+		
+	</div>
+@endsection
